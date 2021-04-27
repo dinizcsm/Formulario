@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <div class="campo">
+        <h1 id="titulo">Cadastro de Dev's</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <form action="">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Qual é sua especialização na programação?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-End
+                <input type="radio" name="devweb" value="backend">Back-End
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select id="senioridade">
+                <option selected disabled value="">Selecione:</option>
+                <option>Estágiario</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione as tecnologias que utiliza</strong></label><br><br>
+                <input type="checkbox" id="tec1" name="tec1" value="html">
+                <label for="tec1">HTML</label>
+                <input type="checkbox" id="tec2" name="tec2" value="java">
+                <label for="tec2">Java</label>
+                <input type="checkbox" id="tec3" name="tec3" value="Javascript">
+                <label for="tec3">Javascript</label>
+                <input type="checkbox" id="tec4" name="tec4" value="Phyton">
+                <label for="tec4">Phyton</label>
+                <input type="checkbox" id="tec5" name="tec5" value="Angular">
+                <label for="tec5">Angular</label>
+                <input type="checkbox" id="tec6" name="tec6" value="Kotlin">
+                <label for="tec6">Kotlin</label>
+                <input type="checkbox" id="tec7" name="tec7" value="Swift">
+                <label for="tec7">Swift</label>
+                <input type="checkbox" id="tec8" name="tec8" value="Delphi">
+                <label for="tec8">Delphi</label>
+                <input type="checkbox" id="tec9" name="tec9" value="PHP">
+                <label for="tec9">PHP</label>
+                <input type="checkbox" id="tec10" name="tec10" value="C#">
+                <label for="tec10">C#</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte um pouco sobre sua experiência:</strong></label>
+            <textarea rows="6" style="width: 26em" id="exp" name="exp"></textarea>
+        </div>
+
+        <button type="submit" class="botao">Salvar</button>
+    </form>
+
+</body>
+</html>
